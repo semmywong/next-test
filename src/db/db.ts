@@ -1,16 +1,9 @@
-/*
- * @Author: Semmy Wong
- * @Date: 2024-12-27 23:41:25
- * @LastEditors: Semmy Wong
- * @LastEditTime: 2024-12-28 00:38:57
- * @Description: Description
- */
 import { drizzle } from 'drizzle-orm/mysql2';
-// import { drizzle } from 'drizzle-orm/tidb-serverless';
 import mysql from 'mysql2/promise';
 
 import env from '@/env';
 
+import * as schema from './schema';
 
 /**
  * Cache the database connection in development. This avoids creating a new connection on every HMR
